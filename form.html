@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <form>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label" for="colors">Color</label>
+                <div class="col-sm-8">
+                    <select name="colors" id="colors" class="form-control">
+                        <option selected>Select...</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="#00FF00">Green</option>
+                        <option value="#FFA500">Orange</option>
+                        <!-- Add more color options as needed -->
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col">
+                    <button type="button" class="btn btn-primary" onclick="changeColor()">Go</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <hr />
+    <h1>Your Challenge:</h1>
+    <p>You will only need to change the code in the HTML section, above the line with the comment that says "Above this is the section for you to edit".</p>
+    <ol>
+        <li>
+            For both the "col" class in the label element and the "col" class for the div that wraps around the select element, modify them so that they each take up 1/3rd of the row for small and up viewports.
+        </li>
+        <li>
+            Beneath the option "Blue", add two or more new color options of your choice. Make sure that the "value" holds a CSS color value such as "red" or "#fff".
+        </li>
+        <li>
+            Clicking on the label text "Color" should cause the Select input to become active, but currently, it does not. Can you figure out why, and how to fix it?
+        </li>
+        <li>
+            Verify that if you choose a color and click on the "Go" button, the background color changes to the color you selected.
+        </li>
+    </ol>
+
+    <!-- Bootstrap JavaScript plugins -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-/gYFpH6ORndJmuVa8aHnqd1Srlnw4IVztrZoXNm8jzsPjmfO3MTCaAWtIaa7jc1p" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shCk+5E8E9xXSCn3ggGh/nU8+78F4IH6daB6J" crossorigin="anonymous"></script>
+
+    <!-- Your JavaScript code for changing background color -->
+    <script>
+        function changeColor() {
+            var color = document.getElementById("colors").value;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
