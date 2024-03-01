@@ -43,6 +43,9 @@
     </ul>
     <a class="navbar-brand" href="#"><img src="./images/logo.png" height="30" width="30"
     /></a>
+    <div class="col-md-4 col-xl-2 mt-4 mt-md-0 text-md-end">
+      <a href="#reserveForm" class="btn btn-lg btn-info">Reserve Campsite</a>
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
     data-bs-target="#campNavbar">
     </div>
@@ -53,26 +56,82 @@
  <main class="container">
  
     <!-- discover section -->
-    <section class="row">
-    <div class="col-sm-4 col-md-3">
-    <h2>Discover & Review</h2>
-    </div>
-    <div class="col">
+    <section id="reserveForm" class="row row-content">
+      <div class="col-9 mx-auto">
+         <!-- Reservation Form Card -->
+         <div class="card">
+             <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+             <div class="card-body">
+                 <!-- Form -->
+                 <form>
+                     <!-- Row 1: Number of Campers -->
+                     <div class="row mb-3">
+                         <label for="campers" class="col-sm-3 col-form-label">Number of Campers</label>
+                         <div class="col-sm-9">
+                             <select class="form-select form-control" id="campers" name="campers">
+                                 <option>Select...</option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                                 <option value="6">6</option>
+                             </select>
+                         </div>
+                     </div>
+                     <!-- Row 2: Date -->
+                     <div class="row mb-3">
+                         <label for="date" class="col-sm-3 col-form-label">Date</label>
+                         <div class="col-sm-9">
+                             <input type="date" class="form-control" id="date" name="date" placeholder="Select date">
+                         </div>
+                     </div>
+                     <!-- Row 3: Search Button -->
+                     <div class="row">
+                         <div class="col">
+                             <button type="submit" class="btn btn-primary">Search</button>
+                         </div>
+                     </div>
+                     <!-- Row 2: Date -->
+                     <div class="row mb-3">
+                         <label for="date" class="col-sm-3 col-form-label">Date</label>
+                         <div class="col-sm-9">
+                             <input type="date" class="form-control" id="date" name="date" placeholder="Select date">
+                         </div>
+                     </div>
+                     <!-- Row 3: Search Button -->
+                     <div class="row">
+                         <div class="col">
+                             <button type="submit" class="btn btn-primary">Search</button>
+                         </div>
+                     </div>
+                 </form>
+             </div>
+         </div>
+     </div>
+</section>
+<section>
+<div class="col">
     <h3>Our Campsites</h3>
     <p>Explore our growing database of curated campsites and leave your 
    own reviews!</p>
     </div>
-    </section>
+</section>
    <!-- feature section -->
     <section class="row">
     <div class="col-sm-4 col-md-3">
-    <h2>Featured Campsites</h2>
-    </div>
-    <div class="col">
-    <h3>React Lake Campground</h3>
-    <p>Nestled in the foothills of the Chrome Mountains, this campground 
-   on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-    </div>
+      <div class="d-flex align-items-center"> <!-- Bootstrap flex utility class -->
+         <img src="./images/react-lake.jpg" alt="Breadcrumb Trail" />
+         <div class="ms-3">
+              <h2>Featured Campsites</h2>
+              <div class="col">
+                 <h3>React Lake Campground</h3>
+                <p>Nestled in the foothills of the Chrome Mountains, this campground 
+                  on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+              </div>
+         </div>
+      </div>
+   </div>
     </section>
    <!-- partner section -->
     <section class="row">
@@ -109,6 +168,12 @@
 <!-- feature section -->
  <section>
  <h2>Featured Campsites</h2>
+ <div class="col">
+     <div class="d-flex">
+          <img class="me-3 img-thumbnail" src="./images/react-lake-thumb.jpg" alt="Bootstrap Outfitters" />
+          <div class="align-self-center"></div>
+     </div>
+   </div>
  <h3>React Lake Campground</h3>
  <p>Nestled in the foothills of the Chrome Mountains, this campground 
 on the shores of the pristine React Lake is a favorite for fly fishers.</p>

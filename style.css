@@ -34,4 +34,9 @@ body {
     .navbar {
         background-color: #901CAD;
        }
+    
+    .left-margin {
+        margin-left: auto; 
+        margin-right: 0;
+    }
        
