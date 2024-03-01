@@ -22,12 +22,16 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-
    MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1
    w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <title>camp: A Better Way To Camp</title>
+   <div class="col-4 col-sm-3 col-md-2 align-self-center">
+      <img src="./images/logo.png" class="img-fluid" />
+   </div>
+ 
+   <title>camp: A Better Way To Camp</title>
 </head>
  <!-- navbar -->
  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
     <div class="container">
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar">
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#nucampNavbar">
         <span class="navbar-toggler-icon"></span>
         </button>
     <div class="collapse navbar-collapse" id="nucampNavbar">
@@ -37,6 +41,10 @@
         <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-list fa-lg"></i> Sites</a></li>
         <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa-solid fa-address-card fa-lg"></i> Contact</a></li>
     </ul>
+    <a class="navbar-brand" href="#"><img src="./images/logo.png" height="30" width="30"
+    /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    data-bs-target="#campNavbar">
     </div>
     </div>
     </nav>
@@ -82,12 +90,21 @@
  
  <!-- discover section -->
  <section>
-    <div class="col-sm-4 col-md-3 order-sm-last">
-          <h2 class="text-sm-end">Discover & Review</h2>
-    </div>
- <h3>Our Campsites</h3>
- <p>Explore our growing database of curated campsites and leave 
-yourown reviews!</p>
+   <div class="col">
+       <div class="d-flex">
+           <img class="me-3 img-thumbnail" src="./images/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
+           <div class="align-self-center">
+      
+                 <div class="col-sm-4 col-md-3 order-sm-last">
+                     <h2 class="text-sm-end">Discover & Review</h2>
+                 </div>
+                     <h3>Our Campsites</h3>
+                       <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave 
+                           yourown reviews!</p>
+            
+            </div>
+       </div>
+   </div>         
  </section>
 <!-- feature section -->
  <section>
@@ -101,9 +118,19 @@ on the shores of the pristine React Lake is a favorite for fly fishers.</p>
     <div class="col-sm-4 col-md-3 order-sm-last">
            <h2 class="text-sm-end">Our Community Partners</h2>
     </div>
- <h3>Bootstrap Outfitters</h3>
- <p>Bootstrap Outfitters supplies you with gear you need at prices 
-youcan't beat.</p>
+    <div class="col">
+      <div class="d-flex">
+      <img class="me-3 img-thumbnail" src="./images/breadcrumb-trail.jpg"
+     alt="Bootstrap Outfitters" />
+      <div class="align-self-center">
+      <h3>Bootstrap Outfitters</h3>
+      <p class="d-none d-sm-block">Bootstrap Outfitters supplies 
+     you with gear you need at prices you can't beat.</p>
+      </div>
+      </div>
+      </div>
+     
+     
  </section>
 </main>
  <!-- footer -->
