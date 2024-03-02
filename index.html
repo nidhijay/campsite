@@ -25,7 +25,9 @@
    <div class="col-4 col-sm-3 col-md-2 align-self-center">
       <img src="./images/logo.png" class="img-fluid" />
    </div>
- 
+    <!-- Your existing button code for "Reserve Campsite" in the header -->
+    <button type="button" class="btn btn-lg btn-info text-nowrap" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Campsite</button>
+
    <title>camp: A Better Way To Camp</title>
 </head>
  <!-- navbar -->
@@ -111,6 +113,34 @@
      </div>
 </section>
 <section>
+    <div class="modal fade" id="reserveModal" tabindex="-1" aria-labelledby="reserveModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="reserveModalLabel">Reserve a Campsite</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="card">
+            <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+            <div class="card-body">
+                <form>
+                    <!-- Form elements here -->
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <!-- Your reservation form content will go here -->
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section>
 <div class="col">
     <h3>Our Campsites</h3>
     <p>Explore our growing database of curated campsites and leave your 
@@ -194,9 +224,7 @@ on the shores of the pristine React Lake is a favorite for fly fishers.</p>
       </div>
       </div>
       </div>
-     
-     
- </section>
+    </section>
 </main>
  <!-- footer -->
  <footer>
